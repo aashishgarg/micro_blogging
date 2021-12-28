@@ -12,6 +12,9 @@
 
 ActiveRecord::Schema.define(version: 2021_12_27_150054) do
 
+  # These are extensions that must be enabled in order to support this database
+  enable_extension "plpgsql"
+
   create_table "microposts", force: :cascade do |t|
     t.text "content"
     t.integer "user_id"
